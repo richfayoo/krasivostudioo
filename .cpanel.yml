@@ -1,0 +1,12 @@
+# .cpanel.yml file
+
+deployment:
+  tasks:
+    - name: Install dependencies
+      command: /usr/bin/php7.4 composer.phar install
+    - name: Migrate database
+      command: /usr/bin/php7.4 artisan migrate
+    - name: Clear cache
+      command: /usr/bin/php7.4 artisan cache:clear
+    - name: Restart queue
+      command: /usr/bin/php7.4 artisan queue:restart
