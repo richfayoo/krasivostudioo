@@ -43,8 +43,8 @@ include "head.php";
   </main><!-- End #main -->
 
   <?php
-  include "footer.php"
-  include "vendor.php"
+  include "footer.php";
+  include "vendor.php";
   ?>
 
 </body>
